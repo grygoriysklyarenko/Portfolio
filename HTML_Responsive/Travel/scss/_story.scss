@@ -1,0 +1,41 @@
+.story {
+    background-color: #d03958;
+    padding: 31px 0 28px 0;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        width: 601px;
+        color: #ffffff;
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: -0.4px;
+    }
+
+    &__button {
+        width: 269px;
+        background-color: #e3d5b8;
+        color: #161616;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        text-transform: uppercase;
+        letter-spacing: -0.44px;
+        text-align: center;
+        padding: 18px 5px;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: darken(#e3d5b8, 10%);
+        }
+    }
+}

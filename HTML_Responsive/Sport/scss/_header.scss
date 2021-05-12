@@ -1,0 +1,286 @@
+.header {
+    padding: 54px 0 110px 0;
+    background-color: #0a0e34;
+    background-image: url(../images/football.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 295px;
+    }
+
+    &__slogan {
+        color: #ffffff;
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 33px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+
+    &__title {
+        color: #ffffff;
+        font-family: 'Proxima Nova Bold', sans-serif;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 92px;
+        text-transform: uppercase;
+        letter-spacing: 4.96px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        &--top {
+            position: relative;
+            z-index: 3;
+        }
+
+        &--bottom {
+            letter-spacing: 4.5px;
+            margin-left: auto;
+            z-index: 1;
+            position: relative;
+        }
+    }
+
+    &__line {
+        width: 254px;
+        height: 317px;
+        color: #5e42b0;
+        position: absolute;
+        left: 400px;
+        top: -78px;
+        z-index: 2;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 176px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+
+        &--margin {
+            margin-right: 50px;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__link {
+        color: #9071ea;
+        font-family: 'Proxima Nova Light', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 21px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        text-decoration: none;
+
+        &:hover {
+            color: darken(#9071ea, 15%);
+        }
+    }
+}
+
+.button {
+    box-shadow: 0 16px 24px #0a0e34;
+    background-color: #5e42b0;
+    border-radius: 77px;
+    width: 311px;
+    color: #ffffff;
+    font-family: 'Proxima Nova Light', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+    padding: 19px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: darken(#5e42b0, 15%);
+    }
+
+    &__icon {
+        margin-right: 25px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__store {
+        font-family: 'Proxima Nova Regular', sans-serif;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 1561px) {
+
+    .header {
+        padding: 53px 10px 91px 10px;
+
+        &__logo {
+            margin-bottom: 178px;
+        }
+
+        &__title {
+            font-size: 64px;
+            line-height: 78px;
+            letter-spacing: 3.52px;
+            margin: 0 auto 162px auto;
+            max-width: 670px;
+
+            &--top {
+                padding-left: 69px;
+            }
+
+            &--bottom {
+                padding-left: 177px;
+                letter-spacing: 3.2px;
+                z-index: 3;
+            }
+        }
+
+        &__line {
+            position: absolute;
+            left: 244px;
+            top: -38px;
+            z-index: 2;
+        }
+
+        &__nav {
+            justify-content: space-around;
+            margin-bottom: 111px;
+        }
+
+        &__buttons--margin {
+            margin-right: 30px;
+        }
+    }
+
+    .nav {
+    
+        &__item:not(:last-child) {
+            margin-right: 61px;
+        }
+    
+        &__link {
+            font-size: 16px;
+            letter-spacing: 0.8px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        padding: 39px 0 14px 0;
+
+        &__logo {
+            width: 189px;
+            height: 24px;
+            margin: 0 auto 122px auto;
+        }
+
+        &__slogan {
+            display: none;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: 1.76px;
+            margin: 0 auto 102px auto;
+            max-width: 300px;
+
+            &--top {
+                padding-left: 0;
+            }
+
+            &--bottom {
+                padding-left: 55px;
+                letter-spacing: 1.6px;
+            }
+        }
+
+        &__line {
+            width: 139px;
+            height: 174px;
+            left: 75px;
+            top: -14px;  
+        }
+
+        &__order {
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
+
+        &__buttons {
+            margin-bottom: 39px;
+
+            &--margin {
+                margin-right: 8px;
+            }
+        }
+
+        &__nav {
+            margin-bottom: 0;
+        }
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        &__item:not(:last-child) {
+            margin-right: 0;
+        }
+
+        &__item {
+            margin: 0 18px;
+        }
+
+        &__link {
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: normal;
+        }
+    }
+
+    .button {
+        width: 142px;
+        box-shadow: 0 10px 16px #0a0e34;
+        border-radius: 39px;
+        font-size: 8px;
+        letter-spacing: 0.4px;
+        line-height: 11px;
+        padding: 10px 0;
+    
+        &__icon {
+            width: 16px;
+            height: 18px;
+            margin-right: 8px;
+        }
+    }
+}

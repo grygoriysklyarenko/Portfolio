@@ -1,0 +1,19 @@
+@import 'fonts';
+@import 'header';
+@import 'athlets';
+@import 'cards';
+@import 'wrapper';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1562px;
+    margin: 0 auto;
+    padding: 0 10px;
+}

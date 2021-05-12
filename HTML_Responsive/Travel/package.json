@@ -1,0 +1,11 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "author": "Sklyarenko",
+  "license": "ISC",
+  "dependencies": {
+    "reset.css": "^2.0.2"
+  }
+}

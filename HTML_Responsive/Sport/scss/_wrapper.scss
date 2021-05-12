@@ -1,0 +1,226 @@
+.wrapper {
+    background-image: url(../images/photo-1417716226287-2f8cd2e80274.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0a0e34;
+}
+
+.prefooter {
+    padding: 229px 0 197px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 151px;
+    }
+
+    &__logo {
+        width: 130px;
+        height: 137px;
+        margin-right: 34px;
+    }
+
+    &__text {
+        position: relative;
+    }
+
+    &__title {
+        color: #ffffff;
+        font-family: 'Proxima Nova Bold', sans-serif;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 90px;
+        text-transform: uppercase;
+        letter-spacing: 4.96px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__desc {
+        color: #a496ca;
+        font-family: 'Proxima Nova Bold', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: uppercase;
+        padding-left: 2px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__line1 {
+        width: 138px;
+        height: 157px;
+        color: #9172e6;
+        position: absolute;
+        top: -20px;
+        left: 26px;
+        z-index: 1;
+    }
+
+    &__line2 {
+        width: 275px;
+        height: 314px;
+        color: #9172e6;
+        position: absolute;
+        top: -92px;
+        left: 363px;
+        z-index: 1;
+    }
+}
+
+.footer {
+    padding: 70px 60px 71px 50px;
+    background-color: rgba(10, 14, 52, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 172px;
+        height: 30px;
+    }
+
+    &__socials {
+        margin-left: 145px;
+    }
+
+    &__icon {  
+        margin-right: 36px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        &--size:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__link {
+        color: #ffffff;
+        font-family: 'Proxima Nova Regular', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-decoration: none;
+
+        &:hover {
+            color: lightblue;
+        }
+    }
+}
+
+@media (max-width: 1561px) {
+
+    .prefooter {
+        padding: 129px 0;
+    
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 198px;
+        }
+    
+        &__logo {
+            margin-right: 0;
+            margin-bottom: 68px;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    
+        &__title {
+            font-size: 80px;
+            letter-spacing: 4.85px;
+        }
+    
+        &__line1 {
+            width: 136px;
+            height: 157px;
+            top: -6px;
+            left: 13px;
+        }
+    
+        &__line2 {
+            width: 275px;
+            height: 314px;
+            top: -74px;
+            left: 290px;
+        }
+    }
+
+    .footer {
+        padding: 33px 0 32px 0;
+    
+        &__logo {
+            display: none;
+        }
+    
+        &__socials {
+            margin: auto;
+        }
+    
+        &__link {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .prefooter {
+        padding: 97px 0 127px 0;
+
+        &__wrap {
+            margin-bottom: 72px;
+        }
+    
+        &__logo {
+            width: 73px;
+            height: 78px;
+            margin-bottom: 51px;
+        }
+    
+        &__title {
+            font-size: 34px;
+            line-height: 34px;
+            letter-spacing: 1.7px;
+        }
+    
+        &__desc {
+            font-size: 15px;
+            line-height: 17px;
+            letter-spacing: 0.75px;
+        }
+    
+        &__line1 {
+            width: 58px;
+            height: 67px;
+            top: -6px;
+            left: 6px;
+        }
+    
+        &__line2 {
+            width: 95px;
+            height: 121px;
+            top: -30px;
+            left: 135px;
+        }
+
+        &__buttons {
+            margin-bottom: 0;
+        }
+    }
+    
+    .footer {
+        padding: 15px 0 14px 0;
+    
+        &__icon--size {
+            height: 18px;            
+        }
+    }
+}

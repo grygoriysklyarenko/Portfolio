@@ -1,0 +1,11 @@
+{
+  "name": "sport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reset.css": "^2.0.2"
+  }
+}

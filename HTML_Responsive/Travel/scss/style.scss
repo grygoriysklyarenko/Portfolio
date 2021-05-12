@@ -1,0 +1,215 @@
+@import 'header';
+@import 'services';
+@import 'story';
+@import 'pricing';
+@import 'section';
+@import 'footer';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+}
+
+.container {
+    max-width: 996px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1170px) {
+    
+    .header {
+
+        &__bottom {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text {
+            text-align: center;
+            margin-top: 65px;
+
+            .lorem {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__form {
+            top: 35px;
+        }
+
+        &__logo {
+            margin-left: 20px;
+        }
+
+        &__nav {
+            margin-right: 10px;
+        }
+    }
+
+    .services {
+
+        &__title {
+            margin-top: 55px;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__cards {
+            justify-content: space-around;
+        }
+    }
+
+    .story {
+
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        &__text {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    .pricing__plans {
+        justify-content: space-evenly;
+    }
+
+    .plan {
+        width: calc((100% - 90px) / 3);
+        padding: 29px 10px 12px 10px;
+        
+        &__cost {
+            font-size: 55px;
+        }
+    
+        &__button {
+            width: 150px;
+        }
+    }
+
+    .section__double {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 50px 0 50px 0;
+    }
+
+    .box {
+        width: auto;
+        margin: 0 30px;
+    }
+
+    .gallery {
+
+        &__title {
+            margin-top: 45px;
+        }
+
+        &__icons {
+            width: 100%;
+            margin-bottom: 42px;
+        }
+    
+        &__icon {
+            
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+    
+            &:hover {
+                transform: scale(1);
+            }
+        
+            &:not(:nth-last-child(-n+3)) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .footer__wrap {
+        padding: 50px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+
+        &__top {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text {
+            width: auto;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            .title {
+                font-size: 54px;
+                line-height: 68px;
+            }
+        }
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        max-width: 400px;
+        width: auto;
+    }
+
+    .services__cards {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin-bottom: 70px;
+    }
+
+    .story__text {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .pricing__plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 85%;
+        max-width: 318px;
+        
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .testimonial__title {
+        font-size: 40px;
+        line-height: 68px;
+    }
+
+    .gallery {
+
+        &__title {
+            font-size: 40px;
+            line-height: 68px;
+        }
+
+        &__icon:not(:last-child) {
+            margin-right: 0px;
+        } 
+    }
+}
