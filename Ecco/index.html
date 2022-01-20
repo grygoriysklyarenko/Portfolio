@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+    <style>
+      .slider {
+        width: 50%;
+        margin: 100px auto;
+      }
+
+      .slick-slide {
+        margin: 0px 20px;
+      }
+
+      .slick-slide img {
+        width: 100%;
+      }
+
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
+
+      .slick-slide {
+        transition: all ease-in-out 0.3s;
+        opacity: 0.2;
+      }
+
+      .slick-active {
+        opacity: 0.5;
+      }
+
+      .slick-current {
+        opacity: 1;
+      }
+    </style>
+    <title>ECCO</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <img src="./images/logo.png" class="header__logo" alt="logo" />
+          <img
+            src="./images/logo_white.png"
+            class="header__logo header__logo--white"
+            alt="logo"
+          />
+          <h2 class="header__slogan">Lorem ipsum dolor sit amet consectetur</h2>
+          <div class="header__discount">
+            <span class="header__description"> Скидка </span>
+            <span class="header__quantity"> 50% </span>
+          </div>
+          <div class="header__price">
+            <span class="header__old-cost"> 3690 грн </span>
+            <span class="header__new-cost"> 1379 грн </span>
+          </div>
+          <div class="header__circle">
+            <button type="button" class="header__button">
+              заказать<br />по скидке
+            </button>
+          </div>
+          <img
+            src="./images/header_black_sneaker.png"
+            class="header__black-sneaker"
+            alt="black sneaker"
+          />
+          <img
+            src="./images/header_red_sneaker.png"
+            class="header__red-sneaker"
+            alt="red sneaker"
+          />
+          <img
+            src="./images/lines_1.png"
+            class="header__lines header__lines--left"
+            alt="color lines"
+          />
+          <img
+            src="./images/lines_2.png"
+            class="header__lines header__lines--right"
+            alt="color lines"
+          />
+          <h2 class="header__title">Lorem ipsum dolor</h2>
+          <span class="header__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            possimus itaque quidem a fugit voluptate aliquam atque
+          </span>
+          <div class="header__boot">
+            <img
+              src="./images/header_black_boot.png"
+              alt="black boot"
+              class="boot__image"
+            />
+            <div class="boot__cross boot__cross--top">
+              <div class="card card--top">
+                <img
+                  src="./images/img_card_top.png"
+                  class="card__image"
+                  alt="card image"
+                />
+                <h3 class="card__title">Lorem ipsum dolor</h3>
+                <span class="card__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                </span>
+              </div>
+            </div>
+            <div class="boot__cross boot__cross--middle">
+              <div class="card card--middle">
+                <img
+                  src="./images/img_card_middle.png"
+                  class="card__image"
+                  alt="card image"
+                />
+                <h3 class="card__title">Lorem ipsum dolor</h3>
+                <span class="card__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                </span>
+              </div>
+            </div>
+            <div class="boot__cross boot__cross--bottom">
+              <div class="card card--bottom">
+                <img
+                  src="./images/img_card_bottom.png"
+                  class="card__image"
+                  alt="card image"
+                />
+                <h3 class="card__title">Lorem ipsum dolor</h3>
+                <span class="card__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="slider-section">
+      <div class="container">
+        <div class="slider-section__wrapper">
+          <div class="slider-section__text">
+            <h2 class="slider-section__title">Lorem, ipsum.</h2>
+            <span class="slider-section__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              aliquid laboriosam harum quo, iusto nobis placeat hic.
+            </span>
+          </div>
+          <div class="slider__wrapper">
+            <div class="variable slider" style="width: 55vw">
+              <div>
+                <img src="./gallery/1.jpg" alt="photo" class="slider__photo" />
+              </div>
+              <div>
+                <img src="./gallery/2.jpg" alt="photo" class="slider__photo" />
+              </div>
+              <div>
+                <img src="./gallery/3.jpg" alt="photo" class="slider__photo" />
+              </div>
+              <div>
+                <img src="./gallery/4.jpg" alt="photo" class="slider__photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__demonstration-block">
+            <img
+              src="./images/logo_white.png"
+              class="footer__logo footer__logo--white"
+              alt="logo"
+            />
+            <div class="footer__sale">60%</div>
+            <button
+              type="button"
+              class="footer__arrow-button footer__arrow-button--invisible"
+              disabled
+            ></button>
+            <button
+              type="button"
+              class="footer__arrow-button footer__arrow-button--reverse"
+            ></button>
+            <img
+              src="./images/footer_black_sneaker.png"
+              alt="black sneaker"
+              class="footer__black-sneaker"
+            />
+            <img
+              src="./images/footer_red_sneaker.png"
+              alt="red sneaker"
+              class="footer__red-sneaker"
+            />
+            <div class="footer__boot-images footer__boot-images--mobile"></div>
+          </div>
+          <div class="footer__shopping-block">
+            <div class="footer__title">
+              <img src="./images/logo.png" alt="logo" class="footer__logo" />
+              <h2 class="footer__slogan"></h2>
+            </div>
+            <div class="footer__price">
+              <span class="footer__old-cost"> 3690 грн </span>
+              <span class="footer__new-cost"> 1379 грн </span>
+            </div>
+            <div class="footer__boot-description"></div>
+            <img
+              src="./images/black_boot_footer.png"
+              alt="black boot"
+              class="footer__black-boot"
+            />
+            <form class="form" action="#" method="GET">
+              <div class="select select-color form__input" tabindex="1">
+                <span class="select__value select-color__value">
+                  Выберите цвет
+                </span>
+                <ul class="select__dropdown select-color__dropdown"></ul>
+              </div>
+              <div class="select select-size form__input" tabindex="2">
+                <span class="select__value select-size__value">
+                  Выберите размер
+                </span>
+                <ul class="select__dropdown select-size__dropdown"></ul>
+              </div>
+              <input type="text" class="color-response" name="color" />
+              <input type="text" class="size-response" name="size" />
+              <input
+                type="text"
+                class="form__input"
+                tabindex="3"
+                placeholder="Имя"
+                name="name"
+              />
+              <input
+                type="tel"
+                class="form__input"
+                tabindex="4"
+                placeholder="Телефон"
+                name="tel"
+              />
+              <input
+                type="submit"
+                value="Заказать"
+                class="form__submit"
+                tabindex="5"
+              />
+              <button type="button" class="form__back" tabindex="6">
+                Назад к характеристикам
+              </button>
+            </form>
+            <div class="footer__boot-images"></div>
+            <div class="modal__wrapper"></div>
+            <button type="button" class="footer__boot-button">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.js"></script>
+    <script>
+      $(document).on("ready", function () {
+        $(".variable").slick({
+          dots: true,
+          infinite: true,
+          variableWidth: true,
+        });
+      });
+    </script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
