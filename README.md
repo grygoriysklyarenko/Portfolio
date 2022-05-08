@@ -1,5 +1,5 @@
 # Portfolio:
-1. HTML_Responsive/Sport
-2. HTML_Responsive/Travel
-3. JS
-4. ECCO
+1. ECCO
+2. JS
+3. Sport
+4. Travel
