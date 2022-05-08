@@ -86,12 +86,13 @@ class Boot {
   renderData(data_sizes, data_colors) {
     for (let key in data_colors) {
       let colors = data_colors[key];
+      let selectColor = document.querySelector(".select-color");
+      let selectColorValue = document.querySelector(".select-color__value");
+      let selectColorDropdown = document.querySelector(
+        ".select-color__dropdown"
+      );
+      selectColorDropdown.innerHTML = "";
       colors.forEach(function (color) {
-        let selectColor = document.querySelector(".select-color");
-        let selectColorValue = document.querySelector(".select-color__value");
-        let selectColorDropdown = document.querySelector(
-          ".select-color__dropdown"
-        );
         let colorResponse = document.querySelector(".color-response");
         selectColorDropdown.innerHTML += `<li class="select__option select-color__option">Цвет: ${color}</li>`;
         selectColorDropdown.addEventListener("click", (e) => {
@@ -113,12 +114,11 @@ class Boot {
 
     for (let key in data_sizes) {
       let sizes = data_sizes[key];
+      let selectSize = document.querySelector(".select-size");
+      let selectSizeValue = document.querySelector(".select-size__value");
+      let selectSizeDropdown = document.querySelector(".select-size__dropdown");
+      selectSizeDropdown.innerHTML = "";
       sizes.forEach(function (size) {
-        let selectSize = document.querySelector(".select-size");
-        let selectSizeValue = document.querySelector(".select-size__value");
-        let selectSizeDropdown = document.querySelector(
-          ".select-size__dropdown"
-        );
         let sizeResponse = document.querySelector(".size-response");
         selectSizeDropdown.innerHTML += `<li class="select__option select-size__option">Размер: ${size}</li>`;
         selectSizeDropdown.addEventListener("click", (e) => {
